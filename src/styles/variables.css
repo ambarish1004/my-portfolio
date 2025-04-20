@@ -1,0 +1,11 @@
+:root {
+    --bg-dark: #0f0f0f;
+    --text-light: #ffffff;
+    --accent-pink: #fddde6;
+    --accent-purple: #e0d5f7;
+    --anime-glow: #fdfd96;
+    --brutalist-border: 2px solid #fff;
+    --transition-fast: 0.3s ease-in-out;
+    --font-main: 'Poppins', sans-serif;
+  }
+  

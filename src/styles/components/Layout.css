@@ -1,0 +1,9 @@
+.layout {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-left: var(--brutalist-border);
+    border-right: var(--brutalist-border);
+    min-height: 100vh;
+  }
+  

@@ -1,0 +1,212 @@
+/* Showcase Wrapper */
+.showcase-wrapper {
+  padding: 5rem 2rem;
+  background: #0f0f0f;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Showcase Heading */
+.showcase-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #7dd3fc;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+/* Showcase Container */
+.showcase-container {
+  display: flex;
+  gap: 2rem;
+  cursor: grab;
+  overflow-x: auto;
+}
+
+/* Showcase Card */
+.showcase-card {
+  min-width: 300px;
+  background: #1f1f1f;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.2);
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  max-height: 300px;
+}
+
+.showcase-card:hover {
+  transform: scale(1.05);
+}
+
+.showcase-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.showcase-info {
+  padding: 1rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.showcase-info h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.showcase-info p {
+  font-size: 0.95rem;
+  color: #e2e8f0;
+  flex-grow: 1;
+  margin-bottom: 1rem;
+}
+
+/* Modal Styling */
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.85);
+  display: grid;
+  place-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: #111;
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  max-width: 700px;
+  position: relative;
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+}
+
+.modal-img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* View Button */
+.view-cert-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: linear-gradient(135deg, #60a5fa, #c084fc);
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.view-cert-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Swiper Container */
+.swiper-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+}
+
+.swiper-slide {
+  width: 320px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    width: 250px;
+  }
+
+  .showcase-card {
+    height: auto;
+    max-height: none;
+  }
+}
+
+.showcase-wrapper {
+  padding: 5rem 2rem;
+  background: #0f0f0f;
+  color: #fff;
+  position: relative;
+  overflow: visible;  /* Allow content to flow normally */
+}
+
+.swiper-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: max-content;
+  gap: 1.5rem;
+  margin-bottom: 2rem; /* Ensure there's some space for the buttons */
+}
+
+.swiper-slide {
+  width: 320px;
+  margin-right: 20px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: stretch;
+  cursor: pointer; /* Ensure users can click the cards */
+}
+
+.showcase-card {
+  min-width: 300px;
+  background: #1f1f1f;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 0 20px rgba(173, 216, 230, 0.2);
+  text-decoration: none;
+  color: white;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80vh;
+  max-height: 300px;
+  overflow: visible;
+}

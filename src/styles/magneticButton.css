@@ -1,0 +1,15 @@
+.magnetic {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: none; /* Hide default cursor */
+    position: relative;
+    transition: all 0.3s ease;
+    will-change: transform;
+    overflow: hidden;
+    font-family: "Poppins", sans-serif;
+    border-radius: 6px;
+  }
+  

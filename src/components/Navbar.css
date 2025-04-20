@@ -1,0 +1,73 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar.scrolled {
+    background-color: rgba(15, 15, 15, 0.95);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: var(--accent-pink);
+    letter-spacing: 1px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .anime {
+    background: linear-gradient(to right, #811fe2, #e810cf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+  }
+  
+  .nav-link {
+    position: relative;
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: var(--accent-pink);
+  }
+  
+  .nav-link .underline {
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 100%;
+    background: var(--accent-pink);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover .underline {
+    transform: scaleX(1);
+  }
+  
